@@ -1,0 +1,20 @@
+.App{
+    height: 100vh;
+    .section{
+        width: calc(100vw - 70px);
+        height: 100vh;
+        position: relative;
+        left: 70px;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; 
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        > * {
+            width: calc(100vw - 70px);
+            height: 100vh;
+            scroll-snap-align: start;
+        }
+    }
+}

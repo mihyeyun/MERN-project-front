@@ -1,0 +1,92 @@
+.main{
+    .wrap{
+        width: 90%;
+        height: 100%;
+        float: left;
+        .topbar{
+            position: fixed;
+            width: 90%;
+            height: 17%;
+            overflow: hidden;
+            z-index: 10;
+            .logo{
+                font-size: 50px;
+                font-weight: bold;
+                display: inline-block;
+                color: red;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+         
+        }   
+        .mainImg{
+            position: absolute;
+            bottom: 3%;
+            left: 35%;
+            transform: translate(-35%);
+            width: 80%;
+            height: 80%;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+    .right-wrap{
+        width: 10%;
+        height: 100%;
+        float: right;
+        position: relative;
+        .cart-wrap{
+            width: 80px;
+            height: 50px;
+            position: fixed;
+            right: 0;
+            top: 5%;
+            border: 1px solid black;
+            border-radius: 5px 0px 0px 5px;
+            background: rgb(31, 31, 255);
+            z-index: 10;
+            .cart{
+                color:white;
+                position: absolute;
+                top: 50%;
+                left: 20%;
+                transform: translate(-20%, -50%);
+            }
+        }
+        .login{
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 70px;
+            height: 35px;
+            text-align: center;
+            text-decoration: underline;
+            color: rgb(31, 31, 255);
+            position: relative;
+            top: 20%;
+            right: -15px;
+        }
+    }
+    .arrow{
+        position: fixed;
+        top: 50%;
+        right: 35px;
+        transform: translate(0, -50%);
+        p{
+            writing-mode: vertical-lr;
+            margin-bottom: 10px;
+        }
+    }
+    .chat{
+        position: fixed;
+        top: 80%;
+        right: 35px;
+        color: rgb(255, 247, 0);
+        z-index: 10;
+        
+    }
+
+}
